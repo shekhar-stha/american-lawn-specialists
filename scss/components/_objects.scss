@@ -1,0 +1,168 @@
+.arrow-btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.arrow-btn {
+    width: 12rem;
+    height: auto;
+}
+
+button.arrow-btn .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: $primary;
+    border-radius: 1.625rem;
+}
+
+button.arrow-btn .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.arrow-btn .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.arrow-btn .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.arrow-btn .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(20%);
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: $primary;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.arrow-btn:hover .circle {
+    width: 100%;
+}
+
+.arrow-btn:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+.arrow-btn:hover .button-text {
+    color: #fff;
+}
+
+// Right arrow btn
+.right-arrow-btn {
+    cursor: pointer;
+    font-weight: 700;
+    transition: all .2s;
+    padding: 12px 20px;
+    border-radius: 100px;
+    background: $primary;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: $white;
+    max-height: 56px;
+}
+
+.right-arrow-btn-outline {
+    cursor: pointer;
+    font-weight: 700;
+    transition: all .2s;
+    padding: 12px 20px;
+    border-radius: 100px;
+    background: transparent;
+    border: 2px solid $primary;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: $primary;
+    max-height: 56px;
+}
+
+.right-arrow-btn:hover {
+    background: $primary;
+}
+
+.right-arrow-btn>i, .right-arrow-btn-outline>i {
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+}
+
+.right-arrow-btn:hover i, .right-arrow-btn-outline:hover i {
+    transform: translateX(5px);
+}
+
+.right-arrow-btn:active {
+    transform: scale(0.95);
+}
+
+//   Headers
+
+.header {
+    font-size: 33px;
+    font-weight: 600;
+    position: relative;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.sub-header {
+    font-size: 18px;
+    font-weight: 600;
+    color: $primary;
+    position: relative;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    width: fit-content;
+    margin-bottom: 1rem;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 6rem;
+        height: 3px;
+        left: 0%;
+        bottom: -7px;
+        background-color: $primary;
+    }
+}
