@@ -12304,6 +12304,11 @@ button.arrow-btn .button-text {
   width: 24rem;
   object-fit: contain;
 }
+@media (max-width: 550px) {
+  .logo {
+    width: 16rem !important;
+  }
+}
 
 .top-information .phone-location a {
   display: flex;
@@ -12497,9 +12502,7 @@ button.arrow-btn .button-text {
 }
 @media (max-width: 992px) {
   .about-us .img-div .right-img {
-    width: 100%;
-    right: 0%;
-    height: 18rem;
+    display: none;
   }
 }
 .about-us .img-div .left-img {
@@ -12513,7 +12516,10 @@ button.arrow-btn .button-text {
 }
 @media (max-width: 992px) {
   .about-us .img-div .left-img {
-    display: none;
+    width: 100%;
+    right: 0%;
+    height: 90%;
+    top: 0;
   }
 }
 .about-us .img-div .left-img-bg {
@@ -12530,7 +12536,10 @@ button.arrow-btn .button-text {
 }
 @media (max-width: 992px) {
   .about-us .img-div .left-img-bg {
-    display: none;
+    width: 100%;
+    right: 5%;
+    height: 90%;
+    top: -5%;
   }
 }
 
@@ -12592,15 +12601,11 @@ button.arrow-btn .button-text {
   font-size: 20px;
 }
 
-.services .service-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
 .services .service-grid .service {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 12px;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 .services .service-grid .service .img-div {
   width: 100%;
@@ -12627,6 +12632,11 @@ button.arrow-btn .button-text {
 .cta .img-div img {
   width: 100%;
 }
+@media (max-width: 768px) {
+  .cta .img-div {
+    width: 100%;
+  }
+}
 .cta .info-div {
   padding: 4rem 0;
   width: 58%;
@@ -12635,14 +12645,31 @@ button.arrow-btn .button-text {
   justify-content: center;
   font-weight: 600;
 }
+@media (max-width: 768px) {
+  .cta .info-div {
+    width: 100%;
+  }
+}
 .cta .info-div h4, .cta .info-div .h4 {
   font-size: 30px;
   padding-left: 3rem;
   color: #fcfef7;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 768px) {
+  .cta .info-div h4, .cta .info-div .h4 {
+    padding: 0;
+    text-align: center;
+  }
+}
 .cta .info-div a {
   margin-left: 3rem;
+}
+@media (max-width: 768px) {
+  .cta .info-div a {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .service-areas .bg-img {
