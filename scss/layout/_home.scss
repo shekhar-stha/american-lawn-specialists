@@ -117,6 +117,25 @@
 
         }
 
+        .custom-shape-divider-bottom-1690221045 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        
+        .custom-shape-divider-bottom-1690221045 svg {
+            position: relative;
+            display: block;
+            width: calc(269% + 1.3px);
+            height: 180px;
+        }
+        
+        .custom-shape-divider-bottom-1690221045 .shape-fill {
+            fill: #f8f8f8;
+        }
     }
 
     .hero-img {
