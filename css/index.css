@@ -12028,6 +12028,58 @@ section {
   margin-bottom: 4.5rem;
 }
 
+nav {
+  background-image: url(/img/lawn-top.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 18px 60px;
+  width: fit-content;
+}
+
+.menu-item ul {
+  text-decoration: none;
+  padding: 0 7rem;
+}
+
+.menu-item ul li {
+  padding: 0 3rem;
+}
+
+.dropdown-menu {
+  padding: 1.3rem 1rem !important;
+}
+.dropdown-menu li {
+  padding: 0rem !important;
+}
+.dropdown-menu li a {
+  color: #212529 !important;
+}
+
+.menu-item ul li:last-of-type {
+  padding-right: 0px !important;
+}
+
+.menu-item ul li a {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  display: inline-block;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.menu-item ul li a:hover {
+  color: #FFB3B3;
+}
+
+#active {
+  color: #2C5848;
+}
+
 .slick-dots {
   display: flex !important;
   justify-content: center;
@@ -12294,7 +12346,7 @@ button.arrow-btn .button-text {
 .top-information {
   background: rgba(0, 0, 0, 0.5);
   padding-bottom: 3rem;
-  box-shadow: 0 0 85px rgba(155, 154, 154, 0.7);
+  box-shadow: 0 0 85px rgba(88, 88, 88, 0.7);
 }
 .top-information .phone-location a {
   display: flex;
@@ -12309,42 +12361,6 @@ button.arrow-btn .button-text {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-}
-
-nav {
-  background-image: url(/img/lawn-top.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
-  padding: 18px 60px;
-}
-
-.menu-item ul li {
-  padding-right: 15px;
-}
-
-.menu-item ul li:last-of-type {
-  padding-right: 0px !important;
-}
-
-.menu-item ul li a {
-  font-weight: 700;
-  font-size: 18px;
-  color: #fff;
-  display: inline-block;
-  text-transform: capitalize;
-  transition: 0.3s;
-}
-
-.menu-item ul li a:hover {
-  color: #FFB3B3;
-}
-
-#active {
-  color: #2C5848;
 }
 
 .nav-hero {
@@ -12377,6 +12393,8 @@ nav {
   margin-bottom: 2.5rem;
   color: #fcfef7;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 60px;
 }
 @media (max-width: 768px) {
   .nav-hero .hero .info-div h1, .nav-hero .hero .info-div .h1 {
@@ -12393,6 +12411,8 @@ nav {
   color: #fcfef7;
   width: 100%;
   text-shadow: black 0.1em 0.1em 0.2em;
+  text-align: center;
+  width: 75%;
 }
 @media (max-width: 768px) {
   .nav-hero .hero .info-div p {
