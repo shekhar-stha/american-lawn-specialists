@@ -8,6 +8,9 @@
 }
 
 .top-information {
+    background: rgba(0,0,0,0.5);
+    padding-bottom: 3rem;
+    box-shadow: 0 0 85px rgba(155, 154, 154, 0.7);
     .phone-location {
         a {
             display: flex;
@@ -27,6 +30,42 @@
     }
 }
 
+nav {
+background-image: url(/img/lawn-top.png);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: auto;
+padding: 18px 60px;
+}
+
+.menu-item ul li {
+padding-right: 15px;
+}
+
+.menu-item ul li:last-of-type {
+padding-right: 0px !important;
+}
+
+.menu-item ul li a {
+font-weight: 700;
+font-size: 18px;
+color: #fff;
+display: inline-block;
+text-transform: capitalize;
+transition: .3s;
+}
+
+.menu-item ul li a:hover {
+color: #FFB3B3;
+}
+
+#active {
+color: #2C5848;
+}
+
 .nav-hero {
     position: relative;
 
@@ -39,7 +78,7 @@
 
         .info-div {
             padding: 2rem 0 8rem;
-            width: 58%;
+            width: 100%;
 
             @media (max-width: 992px) {
                 padding: 0rem 0 4rem;
@@ -81,7 +120,7 @@
         }
 
         .img-div {
-            width: 40%;
+            width: 0%;
             position: relative;
             padding: 2rem 0 8rem;
 

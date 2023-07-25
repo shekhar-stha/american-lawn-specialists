@@ -12028,25 +12028,6 @@ section {
   margin-bottom: 4.5rem;
 }
 
-nav .navbar-brand img {
-  width: 24rem;
-  object-fit: contain;
-}
-nav .nav-link {
-  color: #fcfef7;
-  font-size: 1.14rem;
-  font-weight: 600;
-  margin: 0 1.2rem;
-}
-nav .nav-link:hover {
-  color: #CD1818;
-}
-@media (max-width: 992px) {
-  nav .nav-link {
-    text-align: center;
-  }
-}
-
 .slick-dots {
   display: flex !important;
   justify-content: center;
@@ -12310,6 +12291,11 @@ button.arrow-btn .button-text {
   }
 }
 
+.top-information {
+  background: rgba(0, 0, 0, 0.5);
+  padding-bottom: 3rem;
+  box-shadow: 0 0 85px rgba(155, 154, 154, 0.7);
+}
 .top-information .phone-location a {
   display: flex;
   align-items: center;
@@ -12325,6 +12311,42 @@ button.arrow-btn .button-text {
   border-radius: 50%;
 }
 
+nav {
+  background-image: url(/img/lawn-top.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 18px 60px;
+}
+
+.menu-item ul li {
+  padding-right: 15px;
+}
+
+.menu-item ul li:last-of-type {
+  padding-right: 0px !important;
+}
+
+.menu-item ul li a {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  display: inline-block;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.menu-item ul li a:hover {
+  color: #FFB3B3;
+}
+
+#active {
+  color: #2C5848;
+}
+
 .nav-hero {
   position: relative;
 }
@@ -12338,7 +12360,7 @@ button.arrow-btn .button-text {
 }
 .nav-hero .hero .info-div {
   padding: 2rem 0 8rem;
-  width: 58%;
+  width: 100%;
 }
 @media (max-width: 992px) {
   .nav-hero .hero .info-div {
@@ -12383,7 +12405,7 @@ button.arrow-btn .button-text {
   }
 }
 .nav-hero .hero .img-div {
-  width: 40%;
+  width: 0%;
   position: relative;
   padding: 2rem 0 8rem;
 }
