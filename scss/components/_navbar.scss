@@ -33,16 +33,46 @@ nav {
     margin: auto;
     padding: 18px 60px;
     width: fit-content;
+    margin-top: -40px;
+
+    @media (max-width: 992px) {
+        margin-top: 0;
+        background-image: none;
+        background-repeat: inherit;
+        background-size: inherit;
+        padding: 0px 10px;
+        margin: 0;
+    }
+
 }
 
-.menu-item ul {
+nav .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
     text-decoration: none;
     padding: 0 7rem;
+
+    @media (max-width: 1400px) {
+        padding: 0 3rem;
+    }
+
+    @media (max-width: 992px) {
+        flex-direction: column !important;
+        justify-content: inherit;
+        padding: 0.2rem 0rem;
+    }
 }
 
-.menu-item ul li {
+nav .navbar-nav li {
     padding: 0 3rem;
-
+    @media (max-width: 1400px) {
+        padding: 0 1.5rem;
+    }
+    @media (max-width: 992px) {
+        padding-bottom: 1rem;
+    }
 }
 
 .dropdown-menu {
@@ -56,20 +86,24 @@ nav {
     }
 }
 
-.menu-item ul li:last-of-type {
+nav ul li:last-of-type {
     padding-right: 0px !important;
 }
 
-.menu-item ul li a {
+nav .navbar-nav li a {
     font-weight: 700;
     font-size: 18px;
     color: #fff;
     display: inline-block;
     text-transform: capitalize;
     transition: .3s;
+
+    @media (max-width: 992px) {
+        color: $dark;
+    }
 }
 
-.menu-item ul li a:hover {
+nav ul li a:hover {
     color: #FFB3B3;
 }
 

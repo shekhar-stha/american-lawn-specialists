@@ -32,22 +32,24 @@
 
                 <div class="d-flex col-lg col-12 justify-content-between phone-location">
                     <div class="d-lg-flex d-none align-items-center">
-                        <a title="city" class="text-white right-arrow-btn pe-4"
+                        <a title="city" class="text-white right-arrow-btn rounded-1 pe-4"
                             href="/lawn-service-in-mccomb-ms.html"><i class="fs-15 me-2 fa-solid fa-location-dot"></i>
                             McComb, Mississippi
                         </a>
                     </div>
 
-                    <div class="d-flex d-lg-block d-none">
+                    <div class="d-flex">
                         <img class="logo" src="/img/logo.png" alt="logo main">
                     </div>
 
-                    <!-- <a href="tel:+19852093525" title="phone number" class="text-white fw-500"><i
-                            class="fs-15 fa-solid fa-phone me-3"></i> +1 (985) 209-3525 </a> -->
+                    <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+                        <i class="fa-solid fa-bars text-white fs-22"></i>
+                    </button>
 
                     <div class="d-lg-flex d-none align-items-center">
                         <div>
-                            <a title="Phone Number" href="tel:+19852093525" class="right-arrow-btn ps-4">
+                            <a title="Phone Number" href="tel:+19852093525" class="right-arrow-btn rounded-1 ps-4">
                                 <span>+1 (985) 209-3525</span>
                                 <i class="fa-solid fa-phone-flip"></i>
                             </a>
@@ -57,70 +59,18 @@
             </div>
         </div>
 
-        <!-- <nav class="navbar navbar-expand-lg navbar-dark home-nav">
-            <div class="container triangle-border">
-                <a title="navbar-logo" class="navbar-brand d-lg-none" href="/index.html"><img class="logo"
-                        src="/img/logo.png" alt="nav-logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse mt-lg-0 mt-4" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" title="homepage" aria-current="page" href="/index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" title="Lawn Services" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Lawn Services
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" title="Lawn Mowing" href="/lawn-mowing-mccomb-ms.html">Lawn
-                                        Mowing</a></li>
-                                <li><a class="dropdown-item" title="Commercial Lawn Service"
-                                        href="/commercial-lawn-service-mccomb-ms.html">Commercial
-                                        Lawn Services</a></li>
-                                <li><a class="dropdown-item" title="Residential Lawn Services"
-                                        href="/residential-lawn-service-mccomb-ms.html">Residential
-                                        Lawn Services</a></li>
-                                <li><a class="dropdown-item" title="Lawn Services"
-                                        href="/lawn-service-mccomb-ms.html">Lawn Services</a></li>
-                            </ul>
-                        </li>
+        <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+            aria-labelledby="offcanvasResponsiveLabel">
 
-                        <li class="nav-item">
-                            <a class="nav-link" title="Landscaping Service"
-                                href="/landscaping-service-mccomb-ms.html">Landscaping Services</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" title="Service Areas" href="/service-areas.html">Service
-                                Areas</a>
-                        </li>
-                    </ul>
-
-                    <div class="d-lg-block d-flex justify-content-center">
-                        <p class="fw-600 text-white">
-                            Follow Us: <a title="Facebook Link"
-                                href="https://www.facebook.com/people/American-Lawn-Specialists-LLC/100063717481949/"><i
-                                    class="fa-brands fa-facebook fs-21 ms-2 text-white"></i></a>
-                        </p>
-                    </div> 
-                    <a title="Phone Number" href="tel:+19852093525" class="right-arrow-btn mt-4 d-lg-none">
-                        <span>Free Quote</span>
-                        <i class="fa-solid fa-phone-flip"></i>
-                    </a>
-                </div>
+            <div class="offcanvas-header bg-dark">
+                <img class="img-fluid w-50" src="/img/logo.png" alt="logo offcanvas">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
             </div>
-        </nav> -->
 
-        <div class="container">
-
-            <nav>
-                <div class="menu-item w-100">
-                    <ul class="navbar-nav d-flex justify-content-around flex-row w-100 mb-2 mb-lg-0">
+            <div class="offcanvas-body">
+                <nav>
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" title="homepage" aria-current="page" href="/index.html">Home</a>
                         </li>
@@ -153,8 +103,8 @@
                                 Areas</a>
                         </li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
 
         <div class="hero">
@@ -170,9 +120,9 @@
                             and nearby communities. Call today for a free lawn service estimate.</p>
                         <div class="d-flex justify-content-center mt-5">
                             <a title="Call Now" href="tel:+19852093525"
-                                class="btn btn-primary fs-19 px-4 rounded-1">Call Now</a>
+                                class="btn btn-light fw-600 fs-19 px-4 rounded-1">Call Now</a>
                             <a title="Services" href="/index.html#service" style="background-color: rgba(0, 0, 0, 0.2);"
-                                class="ms-4 btn btn-outline-primary fs-19 px-4 rounded-1">Our Services</a>
+                                class="ms-4 btn btn-outline-light fs-19 px-4 rounded-1">Our Services</a>
                         </div>
                     </div>
                     <!-- <div class="img-div">
@@ -187,16 +137,14 @@
                 </div>
             </div>
         </div>
-        <img class="hero-img" src="/img/alsbg.jpeg" alt="hero image">
+        <img class="hero-home" src="/img/alsbg.jpeg" alt="hero image">
     </section>
 
     <section id="about" class="about-us position-relative mt-4">
         <div class="container d-flex flex-lg-row justify-content-lg-between flex-column py-3">
             <div data-aos="fade-down-left" class="img-div">
-                <img class="right-img" src="/img/cutting-grass.jpg" alt="Cutting Grass">
                 <img class="left-img" src="/img/gardener-weeding.jpeg" alt="Gardener Weeding">
                 <div class="left-img-bg rounded-3">
-
                 </div>
             </div>
 
@@ -288,7 +236,7 @@
     </section>
 
 
-    <section class="services">
+    <section id="service" class="services">
         <div class="container">
             <p class="sub-header sub-header-start text-start">Our Services</p>
             <h2 class="header text-start">What We Do</h2>
@@ -353,7 +301,7 @@
         </div>
     </section>
 
-    <section class="cta position-relative">
+    <section class="cta mb-0  position-relative">
         <div class="container d-md-flex justify-content-between">
             <div class="img-div pe-md-5">
                 <img src="/img/logo.png" alt="logo">
@@ -361,7 +309,7 @@
             <div class="info-div">
                 <h4>Ready for a Lawn Makeover? Get a free estimate now!</h4>
                 <div class="d-md-block d-flex justify-content-center">
-                    <a class="btn btn-primary fs-22 px-5 mt-4 " title="Phone Number" href="tel:+19852093525">Call
+                    <a class="btn btn-light fw-600 fs-22 px-5 mt-4 " title="Phone Number" href="tel:+19852093525">Call
                         Now</a>
                 </div>
             </div>
@@ -373,7 +321,7 @@
     </section>
 
     <!-- Service Areas -->
-    <section class="service-areas my-5 py-4 position-relative">
+    <section class="service-areas my-5 mt-0 py-4 position-relative">
         <img class="img-fluid bg-img" src="/img/mississipi-building.jpg" alt="Mississippi Buildings">
         <div class="container d-lg-flex justify-content-between py-5">
             <div class="col-lg-6 me-2">
@@ -409,7 +357,7 @@
                     </a>
                 </div>
 
-                <a title="Free Quote" class="btn btn-primary fw-500 mt-5 btn-lg" href="tel:+19852093525">Get Free
+                <a title="Free Quote" class="btn btn-light fw-600 fw-500 mt-5 btn-lg" href="tel:+19852093525">Get Free
                     Quote</a>
             </div>
             <div class="mt-lg-0 mt-5 col-lg-5">
@@ -422,8 +370,7 @@
     <section class="about-us position-relative mt-4">
         <div class="container d-flex flex-lg-row-reverse justify-content-lg-between flex-column py-3">
             <div data-aos="fade-down-left" class="img-div">
-                <img class="right-img" src="/img/mowing-grass.jpg" alt="Mowing Grass">
-                <img class="left-img" src="/img/happy-family.jpg" alt="Happy Family">
+                <img class="left-img" src="/img/aerial-view-2.jpeg" alt="Happy Family">
                 <div class="left-img-bg rounded-3">
                 </div>
             </div>
@@ -482,7 +429,7 @@
 
                 <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
                     <p class="mb-3 text-center">
-                        <strong class="text-primary text-center h5 fw-500 fs-20">
+                        <strong class="text-danger text-center h5 fw-500 fs-20">
                             Quick Navigations
                         </strong>
                     </p>
@@ -517,13 +464,13 @@
                     </div>
                 </div>
 
-                <div class="col-lg col-12 mb-lg-0 mb-5 text-lg-left d-flex justify-content-center">
-                    <img src="/img/logo.png" alt="logo" style="object-fit: contain;" width="300" height="300"
-                        class="d-inline-block mx-auto mb-3" />
+                <div class="col-lg col-12 mb-lg-0 mb-5 text-lg-left d-flex justify-content-lg-center">
+                    <img src="/img/logo.png" alt="logo" style="object-fit: contain;" width="300"
+                        class="d-inline-block mx-lg-auto mb-3 my-4" />
                 </div>
 
                 <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
-                    <p class="mb-3 text-center"><strong class="text-primary text-center h5 fw-500 fs-20"> Contact
+                    <p class="mb-3 text-center"><strong class="text-danger text-center h5 fw-500 fs-20"> Contact
                             us</strong></p>
                     <div class="footer-nav">
                         <p class="d-flex justify-content-center mb-3">
