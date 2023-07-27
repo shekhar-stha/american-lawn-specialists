@@ -2,8 +2,16 @@
     width: 30rem;
     object-fit: contain;
 
+    @media (max-width: 1200px) {
+        width: 21rem !important;
+    }
+
     @media (max-width: 768px) {
         width: 17rem !important;
+    }
+
+    @media (max-width: 380px) {
+        max-width: calc(100% - 3.7rem)
     }
 }
 

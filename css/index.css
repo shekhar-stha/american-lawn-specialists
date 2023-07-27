@@ -12421,9 +12421,19 @@ button.arrow-btn .button-text {
   width: 30rem;
   object-fit: contain;
 }
+@media (max-width: 1200px) {
+  .logo {
+    width: 21rem !important;
+  }
+}
 @media (max-width: 768px) {
   .logo {
     width: 17rem !important;
+  }
+}
+@media (max-width: 380px) {
+  .logo {
+    max-width: calc(100% - 3.7rem);
   }
 }
 
