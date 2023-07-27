@@ -64,6 +64,10 @@
     justify-content: center;
     align-items: center;
     z-index: 100;
+
+    @media (max-width: 576px) {
+       background-color: rgba(32, 38, 46, 0.8);
+    }
 }
 
 .left-arrow {
@@ -72,6 +76,10 @@
     @media (max-width: 768px) {
         left: -5px;
     }
+
+    @media (max-width: 576px) {
+        left: -10px;
+    }
 }
 
 .right-arrow {
@@ -79,6 +87,10 @@
 
     @media (max-width: 768px) {
         right: -5px;
+    }
+
+    @media (max-width: 576px) {
+        right: -10px;
     }
 }
 

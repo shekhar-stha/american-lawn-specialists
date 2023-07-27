@@ -7,21 +7,15 @@
     }
 }
 
-// .offcanvas{
-//     background-color: #f8f8f8;
-
-//     .offcanvas-header{
-//         background-color: $dark;
-//     }
-// }
-
 .top-information {
     background: rgba(0, 0, 0, 0.5);
     padding-bottom: 3rem;
     box-shadow: 0 0 85px rgba(88, 88, 88, 0.7);
+
     @media (max-width: 992px) {
         padding-bottom: 1rem;
     }
+
     .phone-location {
         a {
             display: flex;
@@ -56,10 +50,16 @@
             padding: 2rem 0 2rem;
         }
 
-        h1{
+        h1 {
             text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+            text-align: center;
+            font-size: 3rem;
+
+            @media (max-width: 576px) {
+                font-size: 35px;
+            }
         }
-        
+
         .info-div {
             padding: 2rem 0 8rem;
             width: 100%;
@@ -75,6 +75,7 @@
                 text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
                 text-align: center;
                 line-height: 60px;
+
                 @media (max-width: 768px) {
                     font-size: 35px;
                     line-height: 50px;
@@ -141,26 +142,6 @@
             }
 
         }
-
-        .custom-shape-divider-bottom-1690221045 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-        }
-
-        .custom-shape-divider-bottom-1690221045 svg {
-            position: relative;
-            display: block;
-            width: calc(269% + 1.3px);
-            height: 180px;
-        }
-
-        .custom-shape-divider-bottom-1690221045 .shape-fill {
-            fill: #f8f8f8;
-        }
     }
 
     .hero-img {
@@ -174,7 +155,7 @@
         filter: brightness(18%);
     }
 
-    .hero-home{
+    .hero-home {
         position: absolute;
         top: 0;
         width: 100%;
@@ -267,6 +248,8 @@
                 height: 90%;
                 top: 0;
             }
+
+            
         }
 
         .left-img-bg {
@@ -286,6 +269,11 @@
                 right: 5%;
                 height: 90%;
                 top: -5%;
+            }
+
+            @media (max-width: 576px) {
+                right: 2%;
+                top: -2%;
             }
         }
     }
@@ -356,7 +344,7 @@
     }
 }
 
-.services {
+.service {
     .service-grid {
         // display: grid;
         // grid-template-columns: repeat(3, 1fr);

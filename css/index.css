@@ -11990,6 +11990,23 @@ p {
   transition: width 1000ms;
 }
 
+.btn-light {
+  transition: all 0.3s;
+}
+.btn-light:hover {
+  background-color: transparent;
+  color: #f8f9fa;
+}
+
+.btn-outline-light {
+  transition: all 0.3s;
+}
+.btn-outline-light:hover {
+  background-color: #f8f9fa;
+  color: #212529;
+  font-weight: 600;
+}
+
 .btn-warning {
   color: #fcfef7;
 }
@@ -12048,6 +12065,7 @@ nav {
     background-size: inherit;
     padding: 0px 10px;
     margin: 0;
+    width: 100%;
   }
 }
 
@@ -12101,6 +12119,10 @@ nav ul li:last-of-type {
   padding-right: 0px !important;
 }
 
+nav .navbar-nav li .show {
+  color: #fcfef7 !important;
+}
+
 nav .navbar-nav li a {
   font-weight: 700;
   font-size: 18px;
@@ -12108,6 +12130,9 @@ nav .navbar-nav li a {
   display: inline-block;
   text-transform: capitalize;
   transition: 0.3s;
+}
+nav .navbar-nav li a:hover {
+  color: #e6d6d6;
 }
 @media (max-width: 992px) {
   nav .navbar-nav li a {
@@ -12185,6 +12210,11 @@ nav ul li a:hover {
   align-items: center;
   z-index: 100;
 }
+@media (max-width: 576px) {
+  .slick-arrow {
+    background-color: rgba(32, 38, 46, 0.8);
+  }
+}
 
 .left-arrow {
   left: -30px;
@@ -12194,6 +12224,11 @@ nav ul li a:hover {
     left: -5px;
   }
 }
+@media (max-width: 576px) {
+  .left-arrow {
+    left: -10px;
+  }
+}
 
 .right-arrow {
   right: -30px;
@@ -12201,6 +12236,11 @@ nav ul li a:hover {
 @media (max-width: 768px) {
   .right-arrow {
     right: -5px;
+  }
+}
+@media (max-width: 576px) {
+  .right-arrow {
+    right: -10px;
   }
 }
 
@@ -12326,6 +12366,7 @@ button.arrow-btn .button-text {
   border: 2px solid #20262E;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 15px;
   color: #20262E;
   max-height: 56px;
@@ -12430,6 +12471,13 @@ button.arrow-btn .button-text {
 }
 .nav-hero .hero h1, .nav-hero .hero .h1 {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 3rem;
+}
+@media (max-width: 576px) {
+  .nav-hero .hero h1, .nav-hero .hero .h1 {
+    font-size: 35px;
+  }
 }
 .nav-hero .hero .info-div {
   padding: 2rem 0 8rem;
@@ -12512,23 +12560,6 @@ button.arrow-btn .button-text {
   left: 5%;
   z-index: -1;
   border-radius: 9px;
-}
-.nav-hero .hero .custom-shape-divider-bottom-1690221045 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-.nav-hero .hero .custom-shape-divider-bottom-1690221045 svg {
-  position: relative;
-  display: block;
-  width: calc(269% + 1.3px);
-  height: 180px;
-}
-.nav-hero .hero .custom-shape-divider-bottom-1690221045 .shape-fill {
-  fill: #f8f8f8;
 }
 .nav-hero .hero-img {
   position: absolute;
@@ -12635,6 +12666,12 @@ button.arrow-btn .button-text {
     top: -5%;
   }
 }
+@media (max-width: 576px) {
+  .about-us .img-div .left-img-bg {
+    right: 2%;
+    top: -2%;
+  }
+}
 
 .ratings-grid {
   display: grid;
@@ -12694,36 +12731,36 @@ button.arrow-btn .button-text {
   font-size: 20px;
 }
 
-.services .service-grid .service {
+.service .service-grid .service {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 2rem;
 }
-.services .service-grid .service .img-div {
+.service .service-grid .service .img-div {
   width: 100%;
   height: 270px;
   overflow: hidden;
 }
-.services .service-grid .service .img-div img {
+.service .service-grid .service .img-div img {
   width: 100%;
   height: 100%;
   cursor: pointer;
   transition: all ease-in 0.6s;
 }
-.services .service-grid .service .img-div img:hover {
+.service .service-grid .service .img-div img:hover {
   transform: scale(1.1);
   filter: brightness(70%);
 }
-.services .service-grid .service .info-div {
+.service .service-grid .service .info-div {
   padding: 1rem 1.3rem;
 }
-.services .service-grid .service .info-div h3, .services .service-grid .service .info-div .h3 {
+.service .service-grid .service .info-div h3, .service .service-grid .service .info-div .h3 {
   font-weight: 600;
   font-size: 28px;
   margin-bottom: 1rem;
 }
-.services .service-grid .service .info-div p {
+.service .service-grid .service .info-div p {
   margin-bottom: 1.5rem;
 }
 
